@@ -1,0 +1,105 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+    list-style: none;
+}
+h2 {
+  font-family: "Peralta", serif;
+  font-size: 4em;
+  font-weight: 300;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.content {
+    display: block;
+    max-width: 850px;
+    margin: 300px auto 0;
+    overflow-y: auto;
+}
+.standout {
+  margin-top: 50em;
+  align-content: center;
+}
+
+.quicksand-navbar {
+  font-family: "Quicksand", serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Navigation bar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 80% opacity */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    padding: 10px 0;
+    color: white;
+    backdrop-filter: blur(5px); /* Optional: adds a subtle blur effect for a polished look */
+}
+
+
+.navbar .logo img {
+    width: 75%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #ffcc00;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full viewport width */
+    height: 100%; /* Full viewport height */
+    z-index: -1; /* Ensures it stays behind other content */
+    overflow: hidden;
+}
+
+.video-background iframe {
+  position: absolute;
+ top: 50%;
+ left: 50%;
+ width: 177.78vw; /* 100vw * (16/9 aspect ratio) */
+ height: 100vh;
+ transform: translate(-50%, -50%);
+}
